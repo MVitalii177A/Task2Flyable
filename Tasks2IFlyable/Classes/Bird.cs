@@ -8,7 +8,7 @@ namespace Tasks2IFlyable.Classes
         private uint _speed;
 
         /// <summary>
-        /// Максимальная скорость полета
+        /// Максимальная скорость полета птицы
         /// </summary>
         public uint MaxSpeed { get; set; }
 
