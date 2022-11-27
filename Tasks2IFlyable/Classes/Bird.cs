@@ -16,7 +16,8 @@ namespace Tasks2IFlyable.Classes
 
         public override double GetFlyTime(Coords coords) { return 0; }
 
-        public Bird(uint speed)
+        public Bird(Coords initialCoords, uint speed)
+            :base(initialCoords)
         {
             _speed = speed;
         }

@@ -1,5 +1,4 @@
-﻿
-using Tasks2IFlyable.Intefaces;
+﻿using Tasks2IFlyable.Intefaces;
 using Tasks2IFlyable.Structs;
 
 namespace Tasks2IFlyable.Classes
@@ -11,5 +10,10 @@ namespace Tasks2IFlyable.Classes
         public abstract void FlyTo(Coords coords);
 
         public abstract double GetFlyTime(Coords coords);
+
+        public FlyingObject(Coords initialPosition)
+        {
+            CurrentPosition = initialPosition;
+        }
     }
 }

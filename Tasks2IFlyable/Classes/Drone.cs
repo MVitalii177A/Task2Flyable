@@ -1,5 +1,4 @@
-﻿using Tasks2IFlyable.Intefaces;
-using Tasks2IFlyable.Structs;
+﻿using Tasks2IFlyable.Structs;
 
 namespace Tasks2IFlyable.Classes
 {
@@ -17,7 +16,8 @@ namespace Tasks2IFlyable.Classes
 
         public override double GetFlyTime(Coords coords) { return 0; }
 
-        public Drone(uint delay, uint delayfrequency)
+        public Drone(Coords initialCoords, uint delay, uint delayfrequency)
+            :base(initialCoords)
         {
             _delay = delay;
             _delayfrequency = delayfrequency;
